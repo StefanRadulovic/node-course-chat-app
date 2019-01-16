@@ -5,7 +5,7 @@ socket.on('connect', function () {
 
   socket.emit('createMessage', {
     from: 'Stefan',
-    text: 'Yup, that works for me.'
+    text: 'Yup, that work for me.'
   });
 });
 
@@ -15,5 +15,4 @@ socket.on('disconnect', function () {
 
 socket.on('newMessage', function (message) {
   console.log('newMessage', message);
-
 });
